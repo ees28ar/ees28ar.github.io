@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="scroll">
+    <header class="encabezado">
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#presentacion">
+          <h2 class="navegacion__titulo">PORTFOLIO</h2>
+        </a>
+        <ul class="enlaces">
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <section class="presentacion" id="presentacion">
+        <div class="presentacion__contenedor_info">
+          <h1 class="presentacion__titulo">Eduardo E. Soto</h1>
+          <p class="presentacion__parrafo">
+            Desarrollador Web y Diseñador Gráfico Freelance
+          </p>
+          <div class="presentacion__contenedor_botones">
+            <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+            <a
+              href="./assets/docs/cv.pdf"
+              target="_blank"
+              class="boton boton_oscuro"
+              role="button"
+              >Descargar CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <article class="articulo sobre_mi" id="sobre-mi">
+        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+        <div class="articulo__contenedor_descripciones">
+          <section class="seccion_descripcion">
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/profile/Yo.png"
+                alt="foto con paisaje"
+                title="foto con paisaje"
+              />
+            </div>
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mi historia
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              A comienzos del año 2000, realicé cursos de Operador Office Full. Desde entonces, en mi trabajo en el empleo público, he desarrollado tareas administrativas, contables y de recursos humanos, implementando todos los servicios informáticos disponibles. En 2016, completé los cursos de Operador de Programas para Diseño Gráfico I y II en el Instituto Argentino de Computación IAC Resistencia de la Universidad Siglo 21, especializándome en programas como CorelDRAW, Adobe Illustrator, Adobe Photoshop y Adobe InDesign. Esto me permitió ofrecer servicios de diseño gráfico de manera independiente en diversos rubros.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              Con el deseo de ampliar mis conocimientos en el campo de la informática, en 2021 finalicé el curso de Introducción a la Programación del INFORMATORIO. Posteriormente, en 2022, completé la etapa 2 del INFORMATORIO, correspondiente al curso de desarrollo web, que incluía programación web con Python y Django, y bases de datos con Microsoft SQL Server. Ese mismo año, finalicé el curso de Diseño Gráfico para Emprendimientos del programa CENIT CHACO.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              En 2023, continué con la etapa 3 del INFORMATORIO, finalizando con éxito el Curso de Especialización en Tecnologías, que abarcaba Java Spring y React JS, además de completar las etapas I y II del curso de Inglés para Desarrolladores. En 2024, continué ampliando mis conocimientos en maquetación de sitios web y hojas de estilo a través de la actualización del INFORMATORIO. Con los conocimientos adquiridos, he comenzado a desarrollar pequeñas aplicaciones web de manera personal.
+              </p>
+              
+            </div>
+          </section>
+          <section class="seccion_descripcion">
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                Mis hobbies
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+              Soy un apasionado hincha de Boca Juniors y disfruto enormemente de las series, películas y el fútbol. Uno de mis principales hobbies es el diseño gráfico, en el cual busco constantemente ampliar mis conocimientos y llevarlos a la práctica. Me encanta escuchar música de los 90 y compartir salidas y viajes con mi familia.
+              </p>
+              <!--  
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
+                quasi atque deserunt odio, minima saepe delectus nemo
+                praesentium sapiente labore excepturi quos repellat non,
+                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
+                deserunt odio, minima saepe delectus nemo praesentium sapiente
+                labore excepturi quos repellat non, officiis, ea vero commodi
+                reiciendis.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis.
+              </p>-->
+            </div>
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                src="./assets/images/profile/Familia.jpg"
+                alt="foto familia"
+                title="foto de la familia"
+              />
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/paisaje.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 1"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Comercio Electrónico </h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_1"
+              >
+              Proyecto de React.js usando Vite: Es un comercio electrónico falso con características clave: Integración con Platzi Fake Store API, Componentes reutilizables y modularidad, Gestión de estado con React Context, Enrutamiento con React Router
+              </p>
+              <a href="https://tpfinal-react-4og03z2ue-ees28ar.vercel.app/" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/juegos.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 2"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Gestión de Tareas de Equipos de Desarrollo de Videojuegos</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_2"
+              >
+              Este proyecto representa una solución integral para la gestión eficiente de tareas en equipos de desarrollo de videojuegos, implementada a través de una API REST desarrollada en Spring Framework.
+              Esta API proporciona una plataforma centralizada y flexible para la planificación, asignación y seguimiento de tareas, adaptada específicamente a las necesidades de los equipos de desarrollo de videojuegos.
+              </p>
+              <a href="https://github.com/ees28ar/tpifinal-spring.git" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/calendario.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 3"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">e-Commerce </h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_3"
+              >
+              Aplicación de React.js que cuenta con un formulario que permite cargar productos (nombre, descripción y precio). Y posteriormente listar los productos que se van agregando, informando al usuario el precio total, dependiendo los productos y la cantidad agregada.
+              </p>
+              <a href="https://github.com/ees28ar/carrito-app.git" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="https://raw.githubusercontent.com/montexbjeliseo/calc_js/main/Tema_preview.png"
+              alt="imagen del proyecto"
+              title="proyecto 4"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Calculadora con JavaScript</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_4"
+              >
+              Calculadora Web! Esta aplicación te permite realizar cálculos básicos de manera rápida y sencilla. Con las funciones estándar de suma, resta, multiplicación y división, así como la capacidad de borrar y reiniciar. Añadiendo un toque de estilo y comodidad, con el tema oscuro que transforma la experiencia visual. Con tan solo un clic, se podrá cambiar entre el modo claro y oscuro, adaptando la interfaz a preferencias personales.
+              </p>
+              <a href="https://ees28ar.github.io/calculadorajs/" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/calculadora.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 5"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">Aplicación en Java para Gestión de Equipos de Fútbol 5</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_5"
+              >
+              Esta aplicación Java desarrollada utilizando Maven proporciona una solución eficiente y fácil de usar para la gestión de equipos de fútbol 5. Con un enfoque en la simplicidad y la funcionalidad intuitiva, esta aplicación permite a los usuarios cargar y administrar información detallada sobre equipos de fútbol 5, incluidos datos de jugadores y Técnicos. Con una interfaz limpia y una experiencia de usuario fluida, esta aplicación es ideal para ligas locales, torneos amateurs y cualquier entorno donde se juegue al fútbol 5.
+              </p>
+              <a href="https://github.com/ees28ar/Trabajo-Practico-Integrador.git" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/reproductor.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 6"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_6">Mi Trabajo en Diseño Gráfico</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_6"
+              >
+              Bienvenido a mi portfolio, donde la creatividad se encuentra con la funcionalidad. Explora una selección de mis proyectos más destacados, desde branding y diseño de interfaces hasta ilustraciones y material publicitario. Sumérgete en un mundo de diseño innovador y soluciones visuales que cuentan historias y conectan con las personas
+              </p>
+              <a href="https://ees28ar.github.io/ees28ar-graphics.github.io/" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+        </div>
+      </article>
+    </main>
+    <footer class="pie_de_pagina" role="contentinfo">
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/ees28ar"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/git.png"
+                alt="logo de github"
+                title="github"
+            /></a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.facebook.com/Eduardo.alias.Flaco?mibextid=ZbWKwL/"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/logos/face.png"
+                alt="logo de facebook"
+                title="facebook"
+              />
+            </a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com/eduardo.soto28?utm_source=qr&igsh=bWxibDRybm92M3Jx"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/insta.png"
+                alt="logo de Insta"
+                title="insta"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="mailto:mail@mail.com"
+              target="_blank"
+              >Mail: ees28.ar@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
